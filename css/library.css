@@ -1,0 +1,24 @@
+.library{
+    padding-inline: 1.5rem;
+}
+.library-title{
+    font: var(--baseFont);
+    line-height: .5rem;
+}
+.library-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.library-item{
+
+}
+.library-item a{
+    font: var(--baseFontBold);
+    
+}
+.library-item a:hover{
+    color: white;
+}

@@ -1,0 +1,45 @@
+@import url(./fonts.css);
+@import url(./icons.css);
+@import url(./link.css);
+@import url(./body.css);
+@import url(./component-button.css);
+@import url(./component-basic.css);
+@import url(./ellipsis.css);
+@import url(./component-playlist.css);
+@import url(./sidebar.css);
+@import url(./reproductor.css);
+@import url(./navigation.css);
+@import url(./page.css);
+@import url(./layout.css);
+@import url(./scrollbar.css);
+
+:root{
+    /* font-size: 30px; */
+    --primary: #00B050;
+    --white: #ffffff;
+    --gray10: #B3B3B3;
+    --gray20: #737373;
+    --gray30: #282828;
+    --gray40: #181818;
+    --gray50: #121212;
+    --gray60: #000000;
+  
+    --baseFontFamily: Avenir, arial, system-ui;
+    --headline1: bold 2rem/normal var(--baseFontFamily);
+    --headline2: bold 1.5rem/1.75rem var(--baseFontFamily);
+    /* --subtitle: normal .75rem/normal var(--baseFontFamily); No se usa*/
+    --baseFont: normal .875rem/1.375rem var(--baseFontFamily);
+    --baseFontBold: bold .875rem/1.375rem var(--baseFontFamily);
+    --button: bold .875rem/1rem var(--baseFontFamily);
+    --small: normal .75em/normal var(--baseFontFamily);
+}
+@media screen and(min-width:768px){
+    :root{
+        font-size: 16px;
+    }
+}
+@media screen and(min-width:1367px){
+    :root{
+        font-size: 18px;
+    }
+}

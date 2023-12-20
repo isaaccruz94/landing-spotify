@@ -1,0 +1,39 @@
+.progress{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.progress span{
+    line-height: normal;
+}
+.progressBar{
+    flex: 1;
+    block-size: .25rem;
+    background-color: rgba(255,255,255,.2);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.progressSong{
+    block-size: inherit;
+    inline-size: 45%;
+    background-color: var(--white);
+    border-radius: inherit;
+    position: relative;
+}
+.circle{
+    inline-size: .5rem;
+    block-size: .5rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.progressBar:hover .progressSong{
+    background-color: var(--primary);
+}
+.progressBar:hover .circle{
+    display: block;
+}

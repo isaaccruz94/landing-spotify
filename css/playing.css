@@ -1,0 +1,29 @@
+.playing{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    inline-size: 20rem;
+}
+.playing-cover img{
+    vertical-align: middle;
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+}
+.playing-info{
+    /* border: 1px solid gray; */
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.playing-music{
+}
+.playing-song{
+    font: var(--baseFontBold);
+    color: var(--white);
+    display: block;
+}
+.playing-author{
+    font: var(--small);
+    display: block;
+}

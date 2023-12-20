@@ -1,0 +1,23 @@
+.navigation{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: .5rem;
+    flex-shrink: 0;
+}
+.navigation button{
+    inline-size: 1.875rem;
+    block-size: 1.875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--gray60);
+    color: var(--gray10);
+    cursor: pointer;
+}
+.navigation-prev i{
+    position: relative;
+    left: -1px;
+}
+.navigation-next i{
+    position: relative;
+    right: -1px;
+}

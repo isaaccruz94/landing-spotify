@@ -1,0 +1,41 @@
+.listB{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    inline-size: 17.5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: var(--gray30);
+    /* border: 1px solid red; */
+}
+.listB-cover img{
+    inline-size: 4.75rem;
+    block-size: 4.75rem;
+    vertical-align: middle;
+}
+.listB-info{
+    display: flex;
+    gap: .5rem;
+    padding: 1rem;
+    align-items: center;
+    /* border: 1px solid gray; */
+    flex-grow: 1;
+    justify-content: space-between;
+}
+.listB-title{
+    font: var(--baseFontBold);
+    color: var(--white);
+    margin: 0;
+}
+.listB:hover,
+.listB:focus-within{
+    background-color: var(--gray20);
+}
+.listB-button{
+    opacity: 0;
+    transition: .3s opacity;
+}
+.listB:hover .listB-button,
+.listB:focus-within .listB-button   {
+    opacity: 1;
+}

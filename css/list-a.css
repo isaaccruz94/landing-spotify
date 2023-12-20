@@ -1,0 +1,49 @@
+.listA{
+    max-inline-size: 13em;
+    background-color: var(--gray40);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    block-size: 16.5rem;
+}
+.listA-cover{
+    position: relative;
+    border-radius: inherit;
+    inline-size: 9.375rem;
+    height: auto;
+    margin-block-end: 1rem;
+}
+.listA-cover img{
+    inline-size: 9.5rem;
+    height: auto;
+    vertical-align: middle;
+    border-radius: inherit;
+}
+.listA button{
+    position: absolute;
+    right: .5rem;
+    bottom: 0rem;
+    opacity: 0;
+    transition: .3s transform, .3s opacity;
+}
+.listA-song{
+    font: var(--baseFontBold);
+    color: var(--white);
+}
+.listA-author{
+    font: var(--baseFont);
+    margin: 0;
+}
+.listA-song:hover,
+.listA-author:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.listA:hover, .listA:focus-within{
+    background-color: var(--gray30);
+}
+
+.listA:hover button, .listA button:focus-within{
+    opacity: 1;
+    transform: translateY(-.5rem);
+}

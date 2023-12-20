@@ -1,0 +1,28 @@
+.buttonComponent{
+    border: none;
+    min-inline-size: 2.5rem;
+    min-block-size: 2.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--gray10);
+    cursor: pointer;
+}
+.buttonComponent:active{
+    transform: scale(.9);
+}
+.buttonComponent.is-active{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.buttonComponent.is-white{
+    background-color: var(--white);
+    color: var(--gray60);
+}
+.buttonComponent [class*="icon-play"]{
+    position: relative;
+    left: 2px;
+    top: 1px;
+}
+.buttonComponent [class^="icon"]{
+    font-size: 1rem;
+}

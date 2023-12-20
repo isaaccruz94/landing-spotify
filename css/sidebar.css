@@ -1,0 +1,13 @@
+@import url(./header.css);
+@import url(./menu.css);
+@import url(./library.css);
+@import url(./playlist.css);
+
+.sidebar{
+    /* inline-size: 220px; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 1.25rem;
+    background-color: var(--gray60);
+}

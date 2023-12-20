@@ -1,0 +1,23 @@
+.playlist{
+    padding-inline: 1.5rem;
+}
+.playlist-title{
+    font: var(--baseFont);
+    line-height: .5rem;
+}
+.playlist-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.playlist-item{
+
+}
+.playlist-item a{
+    font: var(--baseFontBold);
+}
+.playlist-item a:hover{
+    color: var(--white);
+}
