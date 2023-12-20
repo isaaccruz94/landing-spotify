@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="body">
+    <div class="layout">
+        <div class="layout-block">
+            <div class="layout-sidebar">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <header class="header">
+                            <div class="header-cover">
+                                <img src="./images/spotifu-logo.png" alt="Spotifu logo" title="Spotifu logo" width="112" height="32">
+                            </div>
+                        </header>
+                    </div>
+
+                    <div class="sidebar-menu">
+                        <nav class="menu" aria-label="menu">
+                            <ol class="menu-list">
+                                <li class="menu-item is-active" aria-current="page">
+                                    <a class="link" href="#">
+                                        <i class="icon-home"></i>
+                                        <span>Inicio</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="link" href="#">
+                                        <i class="icon-search"></i>
+                                        <span>Buscar</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="link" href="#">
+                                        <i class="icon-creditCard"></i>
+                                        <span>Premium</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="sidebar-library">
+                        <nav class="library" aria-labelledby="library">
+                            <h2 id="library" class="library-title">Tu Biblioteca</h2>
+                            <ul class="library-list">
+                                <li class="library-item"><a class="link" href="#"><span class="ellipsis">Creada para ti</span></a></li>
+                                <li class="library-item"><a class="link" href="#"><span class="ellipsis">Escuchado recientemente</span></a></li>
+                                <li class="library-item"><a class="link" href="#"><span class="ellipsis">Tus Me Gusta</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="sidebar-playlist">
+                        <nav class="playlist" aria-labelledby="playlist">
+                            <h2 class="playlist-title" id="playlist">Playlist</h2>
+                            <ul class="playlist-list">
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">This is kings of Leon</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Mis pistas de Shazam</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Top 2022</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Rock en tu idioma</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Baladas en Ingles</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Concentracion Perfecta</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">This is AC/DC</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Lofi Girl</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Para cantar en la ducha</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Daily Mix 4</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Descubrimiento Semanal</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Tu Radio</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Daily Mix 2</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Agregadas esta Semana</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Sonidos de Olas</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Pokemon Lofi</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">This is The Killers</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Daily Mix 1</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-main">
+                <div class="page">
+                    <header class="header" aria-label="Barra superior y menu del usuario">
+                        <div class="page-block">
+                            <div class="navigation">
+                                <button class="navigation-prev" disabled aria-label="Recorrer a la izquierda" title="Recorrer a la izquierda">
+                                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                </button>
+                                <button class="navigation-next" aria-label="Recorrer a la derecha" title="Recorrer a la derecha">
+                                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                            <form class="search" action="" role="search" aria-label="Buscar por Artista, canciones o podcast">
+                                <i class="icon-search" aria-hidden="true"></i>
+                                <input type="search" placeholder="Buscar por Artista, canciones o podcast">
+                            </form>
+                        </div>
+                    </header>
+                    <main class="page-block">
+                        
+                        <section class="playlistComponent" aria-labelledby="region1">
+                            <div class="playlistComponent-title">
+                                <h2 id="region1">Buenas noches</h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" disabled aria-label="Recorrer a la izquierda" title="Recorrer a la izquierda">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" aria-label="Recorrer a la derecha" title="Recorrer a la derecha">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="playlistComponent-container">
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/discover.jpg" alt="Descubrimiento Semanal" title="Descubrimiento Semanal" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Descubrimiento semanal">Descubrimiento Semanal</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Descubrimiento semanal " aria-label="Reproducir Descubrimiento semanal ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/daily-1.jpg" alt="Daily Mix 1" title="Daily Mix 1" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Daily Mix 1">Daily Mix 1</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Daily Mix 1 " aria-label="Reproducir Daily Mix 1 ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/2000-mix.jpg" alt="2000's Mix" title="2000's Mix" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="2000's Mix">2000's Mix</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir 2000's Mix " aria-label="Reproducir 2000's Mix ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/daily-4.jpg" alt="Daily Mix 4" title="Daily Mix 4" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Daily Mix 4">Daily Mix 4</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Daily Mix 4 " aria-label="Reproducir Daily Mix 4 ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/daily-3.jpg" alt="Daily Mix 3" title="Daily Mix 3" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Daily Mix 3">Daily Mix 3</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Daily Mix 3 " aria-label="Reproducir Daily Mix 3 ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/this-is-motorama.jpg" alt="This is Motorama" title="This is Motorama" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="This is Motorama">This is Motorama</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir This is Motorama " aria-label="Reproducir This is Motorama ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/2010-mix.jpg" alt="2010's Mix" title="2010's Mix" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="2010's Mix">2010's Mix</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir 2010's Mix " aria-label="Reproducir 2010's Mix ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/daily-2.jpg" alt="Daily Mix 2" title="Daily Mix 2" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Daily Mix 2">Daily Mix 2</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Daily Mix 2 " aria-label="Reproducir Daily Mix 2 ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/billy-mix.jpg" alt="Billy Idol Mix" title="Billy Idol Mix" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Billy Idol Mix">Billy Idol Mix</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Billy Idol Mix " aria-label="Reproducir Billy Idol Mix ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/daily-5.jpg" alt="Daily Mix 5" title="Daily Mix 5" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Daily Mix 5">Daily Mix 5</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Daily Mix 5 " aria-label="Reproducir Daily Mix 5 ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/daily-6.jpg" alt="Daily Mix 6" title="Daily Mix 6" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Daily Mix 6">Daily Mix 6</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Daily Mix 6 " aria-label="Reproducir Daily Mix 6 ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/indie-mix.jpg" alt="Indie Mix" title="Indie Mix" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Indie Mix">Indie Mix</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Indie Mix " aria-label="Reproducir Indie Mix ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/jhung-mix.jpg" alt="Jhung Mix" title="Jhung Mix" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Jhung Mix">Jhung Mix</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Jhung Mix " aria-label="Reproducir Jhung Mix ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/punk-mix.jpg" alt="Punk Mix" title="Punk Mix" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Punk Mix">Punk Mix</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Punk Mix " aria-label="Reproducir Punk Mix ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/your-top-songs-2022.jpg" alt="Your top Songs" title="Your top Songs" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="Your top Songs">Your top Songs</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir Your top Songs " aria-label="Reproducir Your top Songs ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listB">
+                                    <div class="listB-cover">
+                                        <img src="./images/this-is-gorillaz.jpg" alt="This is Gorillaz" title="This is Gorillaz" width="76" height="76">
+                                    </div>
+                                    <div class="listB-info">
+                                        <h3  class="listB-title link" title="This is Gorillaz">This is Gorillaz</h3>
+                                        <div class="listB-button">
+                                            <button class="buttonComponent is-active" title="Reproducir This is Gorillaz " aria-label="Reproducir This is Gorillaz ">
+                                                <i class="icon-play" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="playlistComponent" aria-labelledby="region2">
+                            <div class="playlistComponent-title">
+                                <h2 id="region2">Escuchado recientemente</h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" disabled aria-label="Recorrer a la izquierda" title="Recorrer a la izquierda">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" aria-label="Recorrer a la derecha" title="Recorrer a la derecha">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="playlistComponent-container">
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-liked-songs.png" title="Liked Songs" alt="Liked Songs" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Liked Songs" title="Reproducir Liked Songs">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Liked Songs">Liked Songs</h3>
+                                    <h4 class="listA-author">Varios</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-kings-of-leon.jpg" title="When You See Your Self" alt="When You See Your Self" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir When You See Your Self" title="Reproducir When You See Your Self">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="When You See Your Self"> <span class="ellipsis">When You See Your Self</span></h3>
+                                    <h4 class="listA-author">Kings of Leon</h4>
+                                </div>      
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images//reciente-motorama.jpg" title="Calendar" alt="Calendar" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Calendar" title="Reproducir Calendar">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Calendar"><span class="ellipsis">Calendar</span></h3>
+                                    <h4 class="listA-author">Motorama</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-weezer.jpg" title="Weezer (Teal Album)" alt="Weezer (Teal Album)" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Weezer (Teal Album)" title="Reproducir Weezer (Teal Album)">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Weezer (Teal Album)">Weezer (Teal Album)</h3>
+                                    <h4 class="listA-author">Weezer</h4>
+                                </div>     
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-camiches1.jpg" title="El Balsamo para los Sabios y Los Buenos Perdedores " alt="El Balsamo para los Sabios y Los Buenos Perdedores " width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir El Balsamo para los Sabios y Los Buenos Perdedores " title="Reproducir El Balsamo para los Sabios y Los Buenos Perdedores ">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="El Balsamo para los Sabios y Los Buenos Perdedores "><span class="ellipsis">El Balsamo para los Sabios y Los Buenos Perdedores </span></h3>
+                                    <h4 class="listA-author">Camiches</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/recientes-camiches.jpg" title="Camiches" alt="Camiches" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Camiches" title="Reproducir Camiches">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Camiches"><span class="ellipsis">Camiches</span></h3>
+                                    <h4 class="listA-author">Camiches</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-red-hot.jpg" title="Californication" alt="Californication" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Californication" title="Reproducir Californication">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Californication">Californication</h3>
+                                    <h4 class="listA-author">Red Hot Chilli Peppers</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-human-tetris.jpg" title="Happy Way in the Maze of Rebirth" alt="Happy Way in the Maze of Rebirth" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Happy Way in the Maze of Rebirth" title="Reproducir Happy Way in the Maze of Rebirth">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Happy Way in the Maze of Rebirth"><span class="ellipsis">Happy Way in the Maze of Rebirth</span></h3>
+                                    <h4 class="listA-author">Human Tetris</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-blink.jpg" title="Neighborhoods" alt="Neighborhoods" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Neighborhoods" title="Reproducir Neighborhoods">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Neighborhoods">Neighborhoods</h3>
+                                    <h4 class="listA-author">Blink-182</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-coldplay.jpg" title="KALEIDOSCOPE EP" alt="KALEIDOSCOPE EP" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir KALEIDOSCOPE EP" title="Reproducir KALEIDOSCOPE EP">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="KALEIDOSCOPE EP">KALEIDOSCOPE EP</h3>
+                                    <h4 class="listA-author">Coldplay</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-artic-monkeys.jpg" title="Favorite Worst Nightmare" alt="Favorite Worst Nightmare" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Favorite Worst Nightmare" title="Reproducir Favorite Worst Nightmare">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Favorite Worst Nightmare"><span class="ellipsis">Favorite Worst Nightmare</span></h3>
+                                    <h4 class="listA-author">Arctic Monkeys</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/reciente-foofighters.jpg" title="Echoes, Silence, Patience & Grace" alt="Echoes, Silence, Patience & Grace" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Echoes, Silence, Patience & Grace" title="Reproducir Echoes, Silence, Patience & Grace">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Echoes, Silence, Patience & Grace"><span class="ellipsis">Echoes, Silence, Patience & Grace</span></h3>
+                                    <h4 class="listA-author">Foo Fighters</h4>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="playlistComponent" aria-labelledby="region3">
+                            <div class="playlistComponent-title">
+                                <h2 id="region3">Podcast</h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" disabled aria-label="Recorrer a la izquierda" title="Recorrer a la izquierda">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" aria-label="Recorrer a la derecha" title="Recorrer a la derecha">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="playlistComponent-container">
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-duo.jpg" title="Relatos en ingles con duo" alt="Relatos en ingles con duo" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Relatos en ingles con duo" title="Reproducir Relatos en ingles con duo">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Relatos en ingles con duo">Relatos en ingles con duo</h3>
+                                    <h4 class="listA-author">Duolingo</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-creativo.jpg" title="CREATIVO CLIPS" alt="CREATIVO CLIPS" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir CREATIVO CLIPS" title="Reproducir CREATIVO CLIPS">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="CREATIVO CLIPS"> <span class="ellipsis">CREATIVO CLIPS</span></h3>
+                                    <h4 class="listA-author">Roberto Mtz</h4>
+                                </div>      
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-desarollo-personal.jpg" title="Tu Desarrollo Personal" alt="Tu Desarrollo Personal" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Tu Desarrollo Personal" title="Reproducir Tu Desarrollo Personal">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Tu Desarrollo Personal"><span class="ellipsis">Tu Desarrollo Personal</span></h3>
+                                    <h4 class="listA-author">Mente Presocratica</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-dudas.jpg" title="Se Regalan Dudas" alt="Se Regalan Dudas" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Se Regalan Dudas" title="Reproducir Se Regalan Dudas">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Se Regalan Dudas">Se Regalan Dudas</h3>
+                                    <h4 class="listA-author">Dudas Media</h4>
+                                </div>     
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-ed-team.jpg" title="EDTeam" alt="EDTeam" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir EDTeam" title="Reproducir EDTeam">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="EDTeam"><span class="ellipsis">EDTeam</span></h3>
+                                    <h4 class="listA-author">Ed Team</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-leyendas.jpg" title="Leyendas Legendarias" alt="Leyendas Legendarias" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Leyendas Legendarias" title="Reproducir Leyendas Legendarias">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Leyendas Legendarias"><span class="ellipsis">Leyendas Legendarias</span></h3>
+                                    <h4 class="listA-author">Sonoro | SINCO</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-listening-time.jpg" title="Listening Time" alt="Listening Time" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Listening Time" title="Reproducir Listening Time">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Listening Time">Listening Time</h3>
+                                    <h4 class="listA-author">Sonoro | Conner Pe</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-mente.jpg" title="Entiende Tu Mente" alt="Entiende Tu Mente" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Entiende Tu Mente" title="Reproducir Entiende Tu Mente">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Entiende Tu Mente"><span class="ellipsis">Entiende Tu Mente</span></h3>
+                                    <h4 class="listA-author">Molo Cebrian</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-radiovni.jpg" title="radiOvni" alt="radiOvni" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir radiOvni" title="Reproducir radiOvni">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="radiOvni">radiOvni</h3>
+                                    <h4 class="listA-author">radiOvni</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-ted.jpg" title="TED Talks Daily" alt="TED Talks Daily" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir TED Talks Daily" title="Reproducir TED Talks Daily">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="TED Talks Daily">TED Talks Daily</h3>
+                                    <h4 class="listA-author">TED</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/podcast-terapia.jpg" title="En terapia con Roberto Rocha" alt="En terapia con Roberto Rocha" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir En terapia con Roberto Rocha" title="Reproducir En terapia con Roberto Rocha">
+                                            <i class="icon-play" aria-hidden="true">En terapia con Roberto Rocha</i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="En terapia con Roberto Rocha">En terapia con Roberto Rocha</h3>
+                                    <h4 class="listA-author">Roberto Roch</h4>
+                                </div>
+                                
+                            </div>
+                        </section>
+
+                        <section class="playlistComponent" aria-labelledby="region4">
+                            <div class="playlistComponent-title">
+                                <h2 id="region4">Throwback</h2>
+                                <div class="navigation">
+                                    <button class="navigation-prev" disabled aria-label="Recorrer a la izquierda" title="Recorrer a la izquierda">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" aria-label="Recorrer a la derecha" title="Recorrer a la derecha">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="playlistComponent-container">
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-rock.jpg" title="Rock Classics" alt="Rock Classics" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Rock Classics" title="Reproducir Rock Classics">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Rock Classics">Rock Classics</h3>
+                                    <h4 class="listA-author">Rock legends & epic songs.</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-00.jpg" title="00s Rock Anthems" alt="00s Rock Anthems" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir 00s Rock Anthems" title="Reproducir 00s Rock Anthems">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="00s Rock Anthems"> <span class="ellipsis">00s Rock Anthems</span></h3>
+                                    <h4 class="listA-author">These songs rocked the 00s.</h4>
+                                </div>      
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-2000-mexico.jpg" title="Los 2000 Mexico" alt="Los 2000 Mexico" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Los 2000 Mexico" title="Reproducir Los 2000 Mexico">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Los 2000 Mexico"><span class="ellipsis">Los 2000 Mexico</span></h3>
+                                    <h4 class="listA-author">si, Ya estamos viejos!</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-00-metal.jpg" title="Nu Metal Era" alt="Nu Metal Era" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Nu Metal Era" title="Reproducir Nu Metal Era">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Nu Metal Era">Nu Metal Era</h3>
+                                    <h4 class="listA-author">You Know What time it is.</h4>
+                                </div>     
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-80.jpg" title="All Out 80s" alt="All Out 80s" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir All Out 80s" title="Reproducir All Out 80s">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="All Out 80s"><span class="ellipsis">All Out 80s</span></h3>
+                                    <h4 class="listA-author">The biggest songs of 1980s.</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-90.jpg" title="Easy 90s" alt="Easy 90s" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Easy 90s" title="Reproducir Easy 90s">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Easy 90s"><span class="ellipsis">Easy 90s</span></h3>
+                                    <h4 class="listA-author">Relax with this soothing soundtrack.</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-idioma.jpg" title="Rock en tu Idioma" alt="Rock en tu Idioma" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Rock en tu Idioma" title="Reproducir Rock en tu Idioma">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Rock en tu Idioma">Rock en tu Idioma</h3>
+                                    <h4 class="listA-author">Revive a la generacion que transformo el roc..</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-indie.jpg" title="Indie Rock Club" alt="Indie Rock Club" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir Indie Rock Club" title="Reproducir Indie Rock Club">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="Indie Rock Club"><span class="ellipsis">Indie Rock Club</span></h3>
+                                    <h4 class="listA-author">Welcome to Indie Rock Club.</h4>
+                                </div>
+                                <div class="listA">
+                                    <div class="listA-cover">
+                                        <img src="./images/throwback-70.jpg" title="All Out 70s" alt="All Out 70s" width="150" height="150">
+                                        <button class="buttonComponent is-active" aria-label="Reproducir All Out 70s" title="Reproducir All Out 70s">
+                                            <i class="icon-play" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <h3 class="listA-song" title="All Out 70s"><span class="ellipsis">All Out 70s</span></h3>
+                                    <h4 class="listA-author">The biggest songs of the 1970s.</h4>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout-block">
+            <footer class="layout-bottom">
+                <div class="reproductor">
+                    <div class="reproductor-playing">
+                            <div class="playing">
+                                <div class="playing-cover">
+                                    <img src="./images/reciente-kings-of-leon.jpg" alt="Album When you see your self" title="Album When you see your self" width="56" height="56">
+                                </div>
+                                <div class="playing-info">
+                                    <div class="playing-music">
+                                        <a class="playing-song">The Bandith</a>
+                                        <a class="playing-author">Kings of Leon</a>
+                                    </div>
+                                    <button class="componentBasic" aria-label="Agregar" role="switch" aria-checked="false" title="Agregar">
+                                        <i class="icon-heart" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="reproductor-playerControls">
+                            <div class="player-controls">
+                                <div class="controls" aria-label="Controles de reproduccion">
+                                    <button class="buttonComponent" aria-label="Anterior" title="Anterior">
+                                        <i class="icon-prev" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="buttonComponent is-white" aria-label="Reproducir" title="Reproducir">
+                                        <i class="icon-play" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="buttonComponent" aria-label="Sigueinte" title="Siguiente">
+                                        <i class="icon-next" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="progress">
+                                    <span>01:12</span>
+                                    <div class="progressBar">
+                                        <div class="progressSong">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                    <span>03:25</span>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="reproductor-volume">
+                            <div class="volume">
+                                <button class="componentBasic" aria-label="Silenciar" aria-labelledby="volume" title="Silenciar">
+                                    <i class="icon-volumeUp" id="volume" role="presentation" aria-label="Volumen Alto"></i>
+                                </button>
+                                <div class="progress">
+                                    <div class="progressBar">
+                                        <div class="progressSong">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>
