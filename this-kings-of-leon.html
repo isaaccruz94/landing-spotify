@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <meta property="og:title" content="Spotify" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://isaaccruz94.github.io/landing-spotify/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+</head>
+<body class="body">
+    <div class="layout">
+        <div class="layout-block">
+            <div class="layout-sidebar">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                        <header class="header">
+                            <div class="header-cover">
+                                <img src="./images/spotifu-logo.png" alt="Spotifu logo" title="Spotifu logo" width="112" height="32">
+                            </div>
+                        </header>
+                    </div>
+
+                    <div class="sidebar-menu">
+                        <nav class="menu" aria-label="menu">
+                            <ol class="menu-list">
+                                <li class="menu-item" aria-current="page">
+                                    <a class="link" href="/">
+                                        <i class="icon-home"></i>
+                                        <span>Inicio</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="link" href="#">
+                                        <i class="icon-search"></i>
+                                        <span>Buscar</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="link" href="#">
+                                        <i class="icon-creditCard"></i>
+                                        <span>Premium</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="sidebar-library">
+                        <nav class="library" aria-labelledby="library">
+                            <h2 id="library" class="library-title">Tu Biblioteca</h2>
+                            <ul class="library-list">
+                                <li class="library-item"><a class="link" href="#"><span class="ellipsis">Creada para ti</span></a></li>
+                                <li class="library-item"><a class="link" href="#"><span class="ellipsis">Escuchado recientemente</span></a></li>
+                                <li class="library-item"><a class="link" href="#"><span class="ellipsis">Tus Me Gusta</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="sidebar-playlist">
+                        <nav class="playlist" aria-labelledby="playlist">
+                            <h2 class="playlist-title" id="playlist">Playlist</h2>
+                            <ul class="playlist-list">
+                                <li class="playlist-item is-active"><a class="link" href=""><span class="ellipsis">This is kings of Leon</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Mis pistas de Shazam</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Top 2022</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Rock en tu idioma</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Baladas en Ingles</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Concentracion Perfecta</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">This is AC/DC</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Lofi Girl</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Para cantar en la ducha</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Daily Mix 4</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Descubrimiento Semanal</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Tu Radio</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Daily Mix 2</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Agregadas esta Semana</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Sonidos de Olas</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Pokemon Lofi</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">This is The Killers</span></a></li>
+                                <li class="playlist-item"><a class="link" href=""><span class="ellipsis">Daily Mix 1</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-mainComponent">
+                <div class="hero">
+                    <div class="hero-block">
+                        <div class="navigation">
+                            <button class="navigation-prev" disabled aria-label="Recorrer a la izquierda" title="Recorrer a la izquierda">
+                                <i class="icon-arrowLeft" aria-hidden="true"></i>
+                            </button>
+                            <button class="navigation-next" aria-label="Recorrer a la derecha" title="Recorrer a la derecha">
+                                <i class="icon-arrowRight" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <form class="search" action="" role="search" aria-label="Buscar por Artista, canciones o podcast">
+                            <i class="icon-search" aria-hidden="true"></i>
+                            <input type="search" placeholder="Buscar por Artista, canciones o podcast">
+                        </form>
+                    </div>
+
+                    <div class="playlistMain">
+                        <div class="playlistMain-title"> 
+                            <h2>This is Kings of Leon</h2>
+                        </div>
+                        <div class="playlistMain-subtitle">
+                            <p>name Playlist</p>
+                            <p class="follow">2,611,830 Seguidores</p>
+                        </div>
+                        <div class="playlistMain-button">
+                            <button class="button-playlist">
+                                Reproducir
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="playlistSong">
+                        <div class="songHeader">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Titulo</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Artista</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>Album</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <button class="componentBasic">
+                                    <i class="icon-calendar"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-time">
+                                <button class="componentBasic">
+                                    <i class="icon-clock"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Gransd Scape</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Kings of Leon</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>When You See Your Self</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                        <div class="songInfo">
+                            <div class="songInfo-icons">
+                                <button class="button">
+                                    <i class="icon-play"></i>
+                                </button>
+                                <button class="componentBasic">
+                                    <i class="icon-heart"></i>
+                                </button>
+                            </div>
+                            <div class="songInfo-title">
+                                <p>Final</p>
+                            </div>
+                            <div class="songInfo-artist">
+                                <p>Final</p>
+                            </div>
+                            <div class="songInfo-album">
+                                <p>Fin</p>
+                            </div>
+                            <div class="songInfo-calendar">
+                                <p>2021-02-10</p>
+                            </div>
+                            <div class="songInfo-time">
+                                <p>3:25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="layout">
+            
+        </div>
+
+        <div class="layout-block">
+            <footer class="layout-bottom">
+                <div class="reproductor">
+                    <div class="reproductor-playing">
+                        <div class="playing">
+                            <div class="playing-cover">
+                                <img src="./images/reciente-kings-of-leon.jpg" alt="Album When you see your self" title="Album When you see your self" width="56" height="56">
+                            </div>
+                            <div class="playing-info">
+                                <div class="playing-music">
+                                    <a class="playing-song">The Bandith</a>
+                                    <a class="playing-author">Kings of Leon</a>
+                                </div>
+                                <button class="componentBasic" aria-label="Agregar" role="switch" aria-checked="false" title="Agregar">
+                                    <i class="icon-heart" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reproductor-playerControls">
+                            <div class="player-controls">
+                                <div class="controls" aria-label="Controles de reproduccion">
+                                    <button class="buttonComponent" aria-label="Anterior" title="Anterior">
+                                        <i class="icon-prev" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="buttonComponent is-white" aria-label="Reproducir" title="Reproducir">
+                                        <i class="icon-play" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="buttonComponent" aria-label="Sigueinte" title="Siguiente">
+                                        <i class="icon-next" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="progress">
+                                    <span>01:12</span>
+                                    <div class="progressBar">
+                                        <div class="progressSong">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                    <span>03:25</span>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="reproductor-volume">
+                            <div class="volume">
+                                <button class="componentBasic" aria-label="Silenciar" aria-labelledby="volume" title="Silenciar">
+                                    <i class="icon-volumeUp" id="volume" role="presentation" aria-label="Volumen Alto"></i>
+                                </button>
+                                <div class="progress">
+                                    <div class="progressBar">
+                                        <div class="progressSong">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
