@@ -1,0 +1,9 @@
+.songHeader{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+.songHeader .songInfo-icons button{
+    opacity: 0;
+}

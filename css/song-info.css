@@ -1,0 +1,30 @@
+.songInfo{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.songInfo >*{
+    
+}
+.songInfo-icons{
+
+}
+.songInfo-title{
+    flex: 1;
+}
+.songInfo-artist{
+    flex: 1;
+}
+.songInfo-album{
+    flex: 1;
+}
+.songInfo-calendar{
+
+    display: flex;
+    justify-content: start;
+    flex-basis: 4.5rem;
+
+}
+.songInfo-time{
+
+}

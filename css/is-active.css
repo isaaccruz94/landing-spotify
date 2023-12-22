@@ -1,0 +1,7 @@
+.playlist-item.is-active a{
+    color: var(--white);
+}
+.playlist-item.is-active a:hover{
+    text-decoration: none;
+    cursor: default;
+}

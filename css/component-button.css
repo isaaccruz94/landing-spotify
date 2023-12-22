@@ -26,3 +26,29 @@
 .buttonComponent [class^="icon"]{
     font-size: 1rem;
 }
+.button{
+    border: 1px solid var(--white);
+    background-color: transparent;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.button [class="icon-play"]{
+    /* color: red; */
+    position: relative;
+    bottom: 1px;
+}
+.button-playlist{
+    color: var(--white);
+    border: none;
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    background-color: var(--primary);
+    border-radius: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}

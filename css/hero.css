@@ -1,0 +1,29 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    inline-size: 100%;
+    block-size: 100%;
+    /* padding: 1rem; */
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, var(--gray50) 40%, transparent 100%);
+    position: relative;
+}
+.playlistMain{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-block{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+.playlistSong{
+    overflow-y: auto; 
+    background-color: var;
+    padding-inline: 1rem;
+}

@@ -26,3 +26,12 @@
     flex: 1;
     block-size: var(--bottom-size);
 }
+.layout-mainComponent{
+    block-size: calc(100vh - var(--bottom-size));
+    overflow: hidden;
+    inline-size: calc(100% - var(--sidebarWidth));
+
+    background-image: url(../images/header-kings-of-leon.jpeg);
+    background-size: cover;
+    background-position: center -300px;
+}

@@ -1,0 +1,19 @@
+.playlistMain{
+    color: var(--white);
+    /* border: 1px solid green; */
+    inline-size: 20rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+.playlistMain-title h2{
+    font: var(--headline1);
+    margin: 0;
+}
+.playlistMain-subtitle .follow{
+
+    text-transform: uppercase;
+}
+.playlistMain-button{
+}
